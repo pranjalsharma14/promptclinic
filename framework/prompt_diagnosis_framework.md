@@ -1,189 +1,110 @@
 # Prompt Diagnosis Framework
 
-The PromptClinic Diagnosis Framework is designed to systematically evaluate the quality of prompts used with Large Language Models (LLMs).
+PromptClinic introduces a structured system to analyze and improve AI prompts.
 
-The framework identifies weaknesses in prompts and provides structured guidance to improve them.
-
----
-
-# Why Prompt Diagnosis Matters
-
-Many AI users assume weak results are caused by poor models.  
-However, the real issue is often **poor prompt design**.
-
-Common problems include:
-
-- vague instructions
-- missing context
-- undefined audience
-- lack of constraints
-- unclear output format
-
-Prompt diagnosis helps detect these issues before interacting with AI systems.
+Instead of relying on trial-and-error prompting, this framework evaluates prompts using defined quality indicators.
 
 ---
 
-# Prompt Diagnosis Dimensions
+# Framework Stages
 
-PromptClinic evaluates prompts across five key dimensions.
+## 1. Prompt Input
 
----
+The initial prompt provided by a user.
 
-## 1. Objective Clarity
+Example:
 
-The prompt must clearly state **what the AI should do**.
+Write a blog about marketing.
 
-Weak Example:
-```
-Write about AI.
-```
-
-Improved Example:
-```
-Write a 150-word explanation of how AI is used in healthcare for beginner readers.
-```
-
-Evaluation Questions:
-
-- Is the goal clearly defined?
-- Is the task specific?
-- Is the expected outcome clear?
+This prompt is analyzed before being sent to the AI model.
 
 ---
 
-## 2. Context Quality
+## 2. Prompt Diagnosis
 
-Context helps the AI understand **background information**.
+The prompt is evaluated for structural weaknesses.
 
-Weak Prompt:
-```
-Write a marketing post.
-```
+Key diagnostic questions:
 
-Improved Prompt:
-```
-Write a LinkedIn post explaining the benefits of storytelling in digital marketing for startup founders.
-```
-
-Evaluation Questions:
-
-- Does the prompt include necessary background?
-- Is the topic clearly framed?
+• Does the prompt define a clear objective?  
+• Is the target audience specified?  
+• Are output constraints included?  
+• Is tone or style defined?  
+• Is the task scope clear?
 
 ---
 
-## 3. Audience Definition
+## 3. Weakness Detection
 
-AI outputs improve when the intended audience is specified.
+Common prompt weaknesses include:
 
-Example Audiences:
-
-- students
-- startup founders
-- developers
-- marketers
-- beginners
-
-Evaluation Questions:
-
-- Who is the content for?
-- What level of knowledge should be assumed?
+| Weakness | Impact |
+|--------|--------|
+| Lack of context | Generic responses |
+| Missing audience | Irrelevant tone |
+| No constraints | Unpredictable output length |
+| No structure | Poor readability |
+| Vague objective | Low-value output |
 
 ---
 
-## 4. Tone and Style
+## 4. Prompt Repair
 
-Tone instructions help control the style of AI output.
+The framework reconstructs the prompt by adding:
 
-Examples:
+• clear task objective  
+• audience specification  
+• tone guidelines  
+• structure requirements  
+• output constraints  
 
-- professional
-- conversational
-- persuasive
-- educational
-- storytelling
+Example repair:
 
-Example Prompt:
+Weak Prompt  
+Write a blog about marketing.
 
-```
-Write a professional LinkedIn post explaining why storytelling improves brand marketing.
-```
-
-Evaluation Questions:
-
-- Is tone specified?
-- Is writing style defined?
+Repaired Prompt  
+Write a 500-word beginner-friendly blog explaining digital marketing basics for small business owners. Include 5 key strategies and practical examples.
 
 ---
 
-## 5. Constraints and Structure
+## 5. Output Comparison
 
-Constraints improve output precision.
+Both prompts are executed to compare results.
 
-Examples:
+Evaluation focuses on:
 
-- word limits
-- formatting instructions
-- sections
-- bullet points
-
-Example Prompt:
-
-```
-Write a 120-word LinkedIn post with a hook, insight, and actionable takeaway.
-```
-
-Evaluation Questions:
-
-- Are limits specified?
-- Is output structure defined?
+• clarity  
+• structure  
+• relevance  
+• usefulness
 
 ---
 
-# Prompt Diagnosis Workflow
+## 6. Prompt Health Score
 
-PromptClinic follows this workflow:
+Each prompt is scored using a structured evaluation system.
 
-Prompt Input  
-↓  
-Prompt Analysis  
-↓  
-Weakness Identification  
-↓  
-Prompt Reconstruction  
-↓  
-Optimized Prompt  
+Example:
 
----
+| Criteria | Score |
+|--------|-------|
+| Clarity | 2/5 |
+| Context | 1/5 |
+| Structure | 1/5 |
+| Constraints | 1/5 |
+| Audience Definition | 1/5 |
 
-# Prompt Optimization Strategy
+Total Score: **6 / 25**
 
-Once weaknesses are identified, prompts are improved by:
-
-1. Clarifying objectives
-2. Adding missing context
-3. Defining the audience
-4. Specifying tone and style
-5. Adding constraints and formatting rules
-
-This process produces **stronger prompts that guide AI models more effectively.**
+Higher scores indicate stronger prompts.
 
 ---
 
-# Benefits of the Framework
+# Why This Framework Matters
 
-Using this framework helps:
+Most AI users assume poor output means weak AI.
 
-- Improve AI output quality
-- Reduce vague responses
-- Generate structured content
-- Produce more accurate results
-- Standardize prompt engineering practices
+In reality, poor prompts are the main cause.
 
----
-
-# Conclusion
-
-Prompt engineering is becoming a critical skill for working with modern AI systems.
-
-The PromptClinic framework provides a structured method to **analyze, diagnose, and optimize prompts for better AI performance.**
+PromptClinic demonstrates how structured prompt engineering dramatically improves AI output quality.
