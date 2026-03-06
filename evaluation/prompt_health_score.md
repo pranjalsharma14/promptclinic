@@ -1,56 +1,110 @@
-# Prompt Health Score System
+# Prompt Health Scoring System
 
-PromptClinic evaluates prompt quality using a structured scoring system.
+## Objective
 
-Each prompt is analyzed across key dimensions that influence AI output quality.
+The Prompt Health Score evaluates how well a prompt is structured for AI systems.  
+A higher score indicates a clearer and more optimized prompt.
+
+This framework helps identify weaknesses in prompts and guide improvements.
 
 ---
 
-## Evaluation Criteria
+# Prompt Health Score Model
 
-| Criteria | Description | Score Range |
+Each prompt is evaluated across five dimensions.
+
+| Category | Description | Score Range |
 |--------|-------------|------------|
-| Goal Clarity | Is the objective clearly defined? | 0–10 |
-| Audience Definition | Is the target audience specified? | 0–10 |
-| Context Depth | Does the prompt include useful context? | 0–10 |
-| Tone Guidance | Is the tone or style defined? | 0–10 |
-| Constraints | Are word limits or formatting instructions provided? | 0–10 |
+| Clarity | Is the prompt clear and understandable? | 0–2 |
+| Context | Does the prompt provide sufficient background? | 0–2 |
+| Constraints | Are instructions specific and structured? | 0–2 |
+| Output Definition | Is the expected output clearly defined? | 0–2 |
+| Intent | Is the objective of the prompt obvious? | 0–2 |
+
+Maximum Score = **10**
 
 ---
 
-## Total Prompt Health Score
+# Scoring Guide
 
-Maximum Score: **50**
+### 0
+Missing or extremely unclear
 
-Prompt categories:
+### 1
+Partially defined but incomplete
 
-40–50 → Excellent Prompt  
-30–39 → Good Prompt  
-20–29 → Weak Prompt  
-0–19 → Poor Prompt
-
----
-
-## Example Evaluation
-
-Prompt:
-
-Write a marketing post for my candle business.
-
-Evaluation:
-
-Goal Clarity: 4  
-Audience: 0  
-Context: 1  
-Tone: 0  
-Constraints: 0  
-
-Total Score: **5/50**
+### 2
+Clearly defined and optimized
 
 ---
 
-## Insight
+# Example Evaluation
 
-Low prompt structure leads to generic AI outputs.
+## Weak Prompt
 
-Improving prompt clarity and constraints significantly increases output quality.
+"Write about digital marketing."
+
+### Score
+
+| Category | Score |
+|--------|------|
+| Clarity | 1 |
+| Context | 0 |
+| Constraints | 0 |
+| Output Definition | 0 |
+| Intent | 1 |
+
+Total Score = **2 / 10**
+
+---
+
+## Optimized Prompt
+
+"Write a 200-word beginner-friendly explanation of digital marketing for small business owners. Include 3 main strategies and a short example for each."
+
+### Score
+
+| Category | Score |
+|--------|------|
+| Clarity | 2 |
+| Context | 2 |
+| Constraints | 2 |
+| Output Definition | 2 |
+| Intent | 2 |
+
+Total Score = **10 / 10**
+
+---
+
+# Why This Matters
+
+Prompt evaluation frameworks are important for:
+
+• AI product teams  
+• Prompt engineers  
+• AI researchers  
+• Content automation systems  
+
+A structured scoring system enables consistent improvement of prompts.
+
+---
+
+# Integration with PromptClinic
+
+Prompt Health Score is used in the PromptClinic workflow to:
+
+1. Diagnose prompt weaknesses
+2. Repair prompt structure
+3. Compare output quality
+4. Track improvement across iterations
+
+---
+
+# Future Improvements
+
+Future versions of the framework may include:
+
+• Automated prompt scoring  
+• LLM evaluation benchmarks  
+• Prompt testing datasets  
+• AI output quality metrics
