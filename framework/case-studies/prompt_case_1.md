@@ -1,45 +1,64 @@
-# Case Study 1 — Marketing Prompt Optimization
+# Case Study 1 — Improving a Blog Content Prompt
 
-## Original Prompt
+## Objective
 
-Write a marketing post for my candle business.
-
----
-
-## Prompt Diagnosis
-
-The prompt has several weaknesses:
-
-- Objective is vague
-- Target audience not defined
-- Tone not specified
-- No word limit
-- No call-to-action
-
-Prompt Health Score: 8/50
+Demonstrate how weak prompts produce low-quality AI outputs and how structured prompt engineering improves results.
 
 ---
 
-## Repaired Prompt
+# Weak Prompt
 
-Act as a digital marketing strategist.
-
-Write a 120-word Instagram caption for a luxury candle brand targeting women aged 22–35. Use a warm and emotional tone, highlight relaxation and self-care benefits, and end with a soft call-to-action inviting readers to explore the collection.
+Write a blog about productivity.
 
 ---
 
-## Output Comparison
+# Problems with This Prompt
 
-### Output from Original Prompt
+| Issue | Explanation |
+|------|-------------|
+| Lack of clarity | Topic is extremely broad |
+| Missing audience | Who is the blog for? |
+| No structure | AI does not know format |
+| No length constraint | Output length is unpredictable |
+| No tone instruction | Style may vary randomly |
 
-The candle business offers high-quality candles that smell great and create a relaxing environment in your home.
-
-### Output from Optimized Prompt
-
-Unwind after a long day with the gentle glow of our handcrafted candles. Designed to turn everyday moments into peaceful rituals, each scent fills your space with warmth and calm. Discover the comfort your evenings deserve.
+Prompt Health Score: **3 / 10**
 
 ---
 
-## Insight
+# Improved Prompt
 
-This case study shows that structured prompts dramatically improve tone, clarity, and marketing effectiveness.
+Write a 400-word blog post about productivity tips for remote workers.  
+Include 5 practical tips with short explanations.  
+Use a friendly and motivational tone.
+
+---
+
+# Improvements Made
+
+| Improvement | Benefit |
+|-------------|---------|
+| Defined audience | Content becomes relevant |
+| Added word limit | Output becomes consistent |
+| Structured tips | Improves readability |
+| Defined tone | Matches target audience |
+
+Prompt Health Score: **9 / 10**
+
+---
+
+# Output Comparison
+
+### Weak Prompt Result
+Generic productivity advice without clear structure.
+
+### Improved Prompt Result
+Structured tips with actionable advice and better readability.
+
+---
+
+# Key Insight
+
+Small structural changes in prompts can significantly improve the quality of AI-generated content.
+
+This demonstrates the value of systematic prompt engineering.
