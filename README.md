@@ -54,3 +54,31 @@ The repository will include:
 - Prompt health scoring system
 - Case studies of weak vs optimized prompts
 - Prompt improvement experiments
+
+## PromptClinic Workflow
+
+PromptClinic follows a structured optimization cycle:
+
+User Prompt  
+↓  
+Prompt Diagnosis  
+↓  
+Weakness Detection  
+↓  
+Prompt Repair  
+↓  
+Output Comparison  
+↓  
+Prompt Health Score
+
+## Repository Structure
+
+promptclinic
+│
+├── README.md
+├── framework
+│   └── prompt_diagnosis_framework.md
+├── case-studies
+│   └── prompt_case_1.md
+├── evaluation
+│   └── prompt_health_score.md
