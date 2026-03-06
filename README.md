@@ -218,3 +218,55 @@ This project was created as part of a **Prompt Engineering and AI Workflow Portf
 # License
 
 This project is open-source and available for educational and research purposes.
+
+---
+
+# Example Case Study
+
+## Weak Prompt
+
+Write a blog about digital marketing.
+
+### Issues
+
+• No target audience  
+• No content structure  
+• No tone guidance  
+• No length constraint
+
+Prompt Health Score: **6 / 25**
+
+---
+
+## Repaired Prompt
+
+Write a 500-word beginner-friendly blog explaining the fundamentals of digital marketing for small business owners. Include 5 practical strategies and simple examples.
+
+Prompt Health Score: **22 / 25**
+
+---
+
+## Result Comparison
+
+| Aspect | Weak Prompt | Repaired Prompt |
+|------|-------------|----------------|
+Clarity | Low | High |
+Structure | None | Clear sections |
+Audience Targeting | Missing | Defined |
+Content Quality | Generic | Practical |
+Usefulness | Low | High |
+
+---
+
+# Key Insight
+
+AI output quality is heavily dependent on prompt structure.
+
+By diagnosing and repairing prompts, PromptClinic transforms generic AI responses into structured, high-value outputs.
+
+---
+
+# Author
+
+Pranjal Sharma  
+AI Prompt Engineering | AI Content Systems | Prompt Optimization
